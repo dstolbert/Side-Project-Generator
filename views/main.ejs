@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dev Project Generator</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Dev Project Generator</h1>
+			<p>Out of ideas? Need some help generating your next Indie Hacker side-project? We're here to help.</p>
+		</div>
+			<div style="width: 50%; margin: 10px auto;">
+				<p>Develop <span id="app"></span> that <span id="action"></span> <span id="topic"></span> using <span id="language"></span> and	<span id="tool"></span></p>
+			</div>
+		<div style="width: 50%; margin: 10px auto;">
+			<button id="button" class="btn btn-info btn-block">Innovate</button>
+		</div>
+	</div>
+	<!--Data object defined on the client side for main.js to use-->
+	<script>
+      	data = JSON.parse('<%- JSON.stringify(data) %>');
+	</script>
+	<script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
