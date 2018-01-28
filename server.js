@@ -5,7 +5,7 @@ var express = require("express"),
     
     
 server.use(express.static(__dirname + "/public"));
-mongoose.connect(process.env.MLAB);
+mongoose.connect(process.env.MLAB || "mongodb://localhost/generator");
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(){
