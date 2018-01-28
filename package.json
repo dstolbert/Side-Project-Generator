@@ -4,7 +4,8 @@
   "description": "Out of ideas? Need some help generating your next Indie Hacker side-project? We're here to help.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "dstolbert",
   "license": "ISC",
